@@ -12,7 +12,7 @@ body {
 }
 
 /* Contenedor principal */
-.login-container {
+.registro-container {
   background: #fff;
   padding: 2.5rem 3rem;
   border-radius: 16px;
@@ -25,22 +25,23 @@ body {
 }
 
 /* Título */
-.login-container h2 {
+.registro-container h2 {
   text-align: center;
   margin-bottom: 1.5rem;
   color: #3A6351;
 }
 
 /* Labels */
-.login-container label {
+.registro-container label {
   font-weight: 600;
   margin-bottom: 0.5rem;
   color: #3A6351;
 }
 
 /* Inputs */
-.login-container input[type="text"],
-.login-container input[type="password"] {
+.registro-container input[type="text"],
+.registro-container input[type="email"],
+.registro-container input[type="password"] {
   width: 100%;
   padding: 0.75rem;
   border-radius: 10px;
@@ -48,17 +49,19 @@ body {
   margin-bottom: 1.2rem;
   font-size: 1rem;
   transition: border-color 0.3s;
+  box-sizing: border-box;
 }
 
-.login-container input[type="text"]:focus,
-.login-container input[type="password"]:focus {
+.registro-container input[type="text"]:focus,
+.registro-container input[type="email"]:focus,
+.registro-container input[type="password"]:focus {
   border-color: #5B8E7D;
   outline: none;
   box-shadow: 0 0 5px rgba(91, 142, 125, 0.5);
 }
 
-/* Botón ingresar */
-.login-container button[type="submit"] {
+/* Botón registrarse */
+.registro-container input[type="submit"] {
   width: 100%;
   padding: 0.75rem;
   border: none;
@@ -72,48 +75,8 @@ body {
   transition: background 0.3s ease;
 }
 
-.login-container button[type="submit"]:hover {
+.registro-container input[type="submit"]:hover {
   background: #2e5143;
-}
-
-/* Texto de "O inicia sesión con:" */
-.login-container p {
-  text-align: center;
-  color: #555;
-  margin: 1rem 0 0.5rem;
-  font-weight: 600;
-}
-
-/* Google login */
-.google-login {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-  margin-bottom: 1.5rem;
-}
-
-.google-login h3 {
-  margin: 0;
-  color: #3A6351;
-  font-weight: 600;
-  font-size: 1rem;
-}
-
-/* Enlaces */
-.login-container a {
-  color: #3A6351;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.login-container a:hover {
-  text-decoration: underline;
-}
-
-/* Párrafos con enlaces (registro y recuperar contraseña) */
-.login-container p > a {
-  margin-left: 0.3rem;
 }
 
 /* Botón regresar (como link) */
