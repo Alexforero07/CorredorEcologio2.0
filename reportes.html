@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Corredor Ecológico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>El Corredor Ecológico</h1>
+        <p>Un sitio para Ayudar y actuar por el medio ambiente</p>
+      </header>
+    
+      <nav>
+        <a href="/Login.html">Iniciar sesión</a>
+        <a href="Inicio.html">Noticias</a>
+        <a href="Inicio.html">Consejos</a>
+        <a href="Inicio.html">Contacto</a>
+        <a href="reportes.html">REPORTAR</a>
+      </nav>
+
+</head>
+<body>
+<!-- Formulario para crear un nuevo reporte -->
+<h1>Nuevo Reporte</h1>
+<form id="form-reporte" enctype="multipart/form-data">
+  <input type="text" id="titulo" name="titulo" placeholder="Título" required><br>
+  <textarea id="descripcion" name="descripcion" placeholder="Descripción" required></textarea><br>
+  <input type="file" id="imagen" name="imagen" accept="image/*"><br>
+  <button type="submit">Enviar</button>
+</form>
+<!-- Sección para mostrar la lista de reportes -->
+<h2>Lista de Reportes</h2>
+<div id="lista-reportes"></div>
+
+<script src="server.js"></script>
+<script src="reportes.js"></script>
+</body>
+</html>
+
