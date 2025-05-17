@@ -6,45 +6,23 @@
 
     <!-- Estilos -->
     <link rel="stylesheet" href="stylelogin.css">
-
-    <!-- Google Identity Services -->
-    <script src="https://accounts.google.com/gsi/client" async defer></script>
 </head>
 <body>
 <form class="login-container" action="/procesar_login" method="post">
     <h2>Iniciar Sesión</h2>
 
     <label for="usuario">Usuario</label>
-    <input type="text" id="usuario" name="usuario" placeholder="Usuario" required>
+    <input type="text" id="usuario" name="usuario" placeholder="Usuario" required autocomplete="username">
 
     <label for="contrasena">Contraseña</label>
-    <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña" required>
+    <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña" required autocomplete="current-password">
 
     <button type="submit">Ingresar</button>
-  
-    <div class="google-login">
-        <h3>O inicia sesión con Google</h3>
-        <div id="g_id_onload"
-             data-client_id="TU_CLIENT_ID"
-             data-callback="handleCredentialResponse"></div>
-
-        <div class="g_id_signin"
-             data-type="standard"
-             data-size="large"
-             data-theme="outline"
-             data-text="sign_in_with"
-             data-shape="rectangular"
-             data-logo_alignment="left"></div>
-    </div>
 
     <p>¿No tienes cuenta? <a href="registro.html">Regístrate aquí</a></p>
     <p><a href="recuperarcontraseña.html">¿Olvidaste tu contraseña?</a></p>
 
     <a class="boton-regresar" href="Inicio.html">Volver al inicio</a>
 </form>
-
-
- 
-    <script src="loginGoogle.js"></script>
 </body>
 </html>
