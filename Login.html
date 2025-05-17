@@ -6,19 +6,26 @@
 
     <!-- Estilos -->
     <link rel="stylesheet" href="stylelogin.css">
+
+    <!-- Google Identity Services -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
 </head>
 <body>
 <form class="login-container" action="/procesar_login" method="post">
     <h2>Iniciar Sesión</h2>
 
     <label for="usuario">Usuario</label>
-    <input type="text" id="usuario" name="usuario" placeholder="Usuario" required autocomplete="username">
+    <input type="text" id="usuario" name="usuario" placeholder="Usuario" required>
 
     <label for="contrasena">Contraseña</label>
-    <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña" required autocomplete="current-password">
+    <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña" required>
 
     <button type="submit">Ingresar</button>
+<<<<<<< HEAD
     <p>O inicia sesión con:</p>
+=======
+  
+>>>>>>> parent of b465e43 (Guardando cambios antes de revertir").)
     <div class="google-login">
         <h3>O inicia sesión con Google</h3>
         <div id="g_id_onload"
@@ -39,5 +46,9 @@
 
     <a class="boton-regresar" href="Inicio.html">Volver al inicio</a>
 </form>
+
+
+ 
+    <script src="loginGoogle.js"></script>
 </body>
 </html>
