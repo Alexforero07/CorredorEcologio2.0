@@ -1,7 +1,7 @@
 /* Tipografía y estructura general */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #ececec; /* verde profundo ambiental */
+  background: #3A6351; /* verde profundo ambiental */
   margin: 0;
   padding: 0;
   display: flex;

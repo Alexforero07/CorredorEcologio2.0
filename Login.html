@@ -18,6 +18,21 @@
     <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña" required autocomplete="current-password">
 
     <button type="submit">Ingresar</button>
+  
+    <div class="google-login">
+        <h3>O inicia sesión con Google</h3>
+        <div id="g_id_onload"
+             data-client_id="TU_CLIENT_ID"
+             data-callback="handleCredentialResponse"></div>
+
+        <div class="g_id_signin"
+             data-type="standard"
+             data-size="large"
+             data-theme="outline"
+             data-text="sign_in_with"
+             data-shape="rectangular"
+             data-logo_alignment="left"></div>
+    </div>
 
     <p>¿No tienes cuenta? <a href="registro.html">Regístrate aquí</a></p>
     <p><a href="recuperarcontraseña.html">¿Olvidaste tu contraseña?</a></p>
