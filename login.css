@@ -1,62 +1,67 @@
 /* Tipografía y estructura general */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #f8f6f6; /* fondo claro */
+  background: #f8f6f6;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   min-height: 100vh;
-  color: #3A6351;
+  color: #2e2e2e;
 }
 
 /* Contenedor principal */
-.recuperar-container {
+.login-container {
   background: #fff;
   padding: 2.5rem 3rem;
   border-radius: 16px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
   width: 100%;
-  max-width: 400px;
+  max-width: 450px;
+  margin: 2rem auto;
   color: #2e2e2e;
   display: flex;
   flex-direction: column;
 }
 
 /* Título */
-.recuperar-container h2 {
+.login-container h2 {
   text-align: center;
   margin-bottom: 1.5rem;
   color: #3A6351;
 }
 
 /* Labels */
-.recuperar-container label {
+.login-container label {
   font-weight: 600;
   margin-bottom: 0.5rem;
   color: #3A6351;
+  display: block;
 }
 
 /* Inputs */
-.recuperar-container input[type="email"] {
+.login-container input[type="text"],
+.login-container input[type="email"],
+.login-container input[type="password"] {
   width: 100%;
   padding: 0.75rem;
   border-radius: 10px;
   border: 1px solid #ccc;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem;
   font-size: 1rem;
   transition: border-color 0.3s;
 }
 
-.recuperar-container input[type="email"]:focus {
+.login-container input:focus {
   border-color: #5B8E7D;
   outline: none;
   box-shadow: 0 0 5px rgba(91, 142, 125, 0.5);
 }
 
-/* Botón enviar */
-.recuperar-container input[type="submit"] {
+/* Botones */
+.login-container button[type="submit"],
+.login-container button {
   width: 100%;
   padding: 0.75rem;
   border: none;
@@ -66,34 +71,48 @@ body {
   border-radius: 10px;
   cursor: pointer;
   font-size: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 0.5rem;
   transition: background 0.3s ease;
 }
 
-.recuperar-container input[type="submit"]:hover {
+.login-container button:hover {
   background: #2e5143;
 }
 
-.recuperar-container input[type="submit"]:focus {
-  outline: 3px solid #5B8E7D;
-  outline-offset: 2px;
+/* Párrafos con enlaces */
+.login-container p {
+  text-align: center;
+  color: #555;
+  margin: 1rem 0 0.5rem;
+  font-weight: 600;
 }
 
-/* Botón regresar (como link) */
+.login-container p > a {
+  color: #3A6351;
+  text-decoration: none;
+  margin-left: 0.3rem;
+  font-weight: 600;
+}
+
+.login-container p > a:hover {
+  text-decoration: underline;
+}
+
+/* Botón regresar */
 .boton-regresar {
   display: block;
-  margin: 1rem auto 0;
+  margin: 2rem auto 0;
   padding: 0.5rem 1.5rem;
   background: transparent;
   border: 2px solid #3A6351;
   border-radius: 10px;
   color: #3A6351;
   font-weight: 600;
-  width: max-content;
   cursor: pointer;
-  transition: background 0.3s, color 0.3s;
   text-align: center;
   text-decoration: none;
+  transition: background 0.3s, color 0.3s;
+  width: max-content;
 }
 
 .boton-regresar:hover {
