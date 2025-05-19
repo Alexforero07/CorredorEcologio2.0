@@ -33,9 +33,9 @@ const db = mysql.createConnection({
 
 db.connect(err => {
   if (err) {
-    console.error('❌ Error de conexión a MySQL:', err.message);
+    console.error('Error de conexión a MySQL:', err.message);
   } else {
-    console.log('✅ Conexión exitosa a MySQL');
+    console.log('Conexión exitosa a MySQL');
   }
 });
 // Crear tabla de reportes si no existe

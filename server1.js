@@ -16,7 +16,7 @@ console.log('Iniciando servidor...');
 const db = mysql.createConnection({
   host: 'localhost',
   user: 'root',
-  password: '', // Pon tu contraseña si tienes
+  password: '',
   database: 'sistema_usuarios'
 });
 
